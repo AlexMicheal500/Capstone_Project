@@ -15,8 +15,8 @@ pipeline {
                 script {
                     
                     sh "docker"
-                    sh "curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose"
-                    sh "chmod +x /usr/local/bin/docker-compose"
+                    // sh "curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose"
+                    // sh "chmod +x /usr/local/bin/docker-compose"
                     // Build and start the application using docker-compose
                     sh "docker-compose up -d"
                 }
