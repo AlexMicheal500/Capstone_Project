@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Build and start the application using docker-compose
-                    sh "docker-compose -f docker-compose.yml -p Capstone_Project up -d --build"
+                    sh "sudo docker-compose up -d"
                 }
             }
         }
