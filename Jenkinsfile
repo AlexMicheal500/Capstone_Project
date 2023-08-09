@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Build and start the application using docker-compose
-                    sh "sudo docker-compose up -d"
+                    sh "docker-compose up -d"
                 }
             }
         }
