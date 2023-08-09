@@ -14,9 +14,7 @@ pipeline {
             steps {
                 script {
                     // Build and start the application using docker-compose
-                    apt update
-                    apt install docker.io
-                    sh "docker-compose -f docker-compose.yml up -d --build"
+                    sh "docker-compose -f docker-compose.yml -p capstone-project up -d --build"
                 }
             }
         }
